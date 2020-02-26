@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>JavaScript Ex 01</title>
+
+        <script>
+
+            var cw1 = "are";
+            let cw2 = "tubas",
+                cw3 = "unusual",
+                cw4 = "?!";
+
+                var sentence = cw1 + " " + cw2 + " " + cw3 + cw4[0];
+                var newWord = cw1[1] + cw2[1] + cw3[1] + cw4[1];
+                console.log(sentence);
+                console.log(sentence.length);
+                console.log(newWord);
+
+                // slicing a string
+                var myLongString = "My long string is long.";
+                console.log( myLongString, myLongString.length );
+                var myShortString = myLongString.slice(3,14);
+                console.log (myShortString);
+
+                // make uppercase or lower case
+                console.log ( myLongString.toUpperCase());
+               
+                // Challenge #1: My Solution
+                console.log ("\n My Solution: ");
+                var messyString = "hELlo THERE, hOW ARE yOu doING?";
+
+                // get length of string
+                var messyStringLength = messyString.length;
+                console.log(messyStringLength);
+
+                // make the letters lower and upper case
+                var lower = messyString.slice(1).toLowerCase();
+                var upper = messyString.slice(0,1).toUpperCase();
+
+                var cleanString = upper + lower;
+                console.log(cleanString);
+
+                // Instructor Solution
+                console.log ("\n Instructor Solution: ");
+                
+                var lowerCase = messyString.toLowerCase();
+                var char1 = lowerCase[0];
+                var char1Upper = char1.toUpperCase();
+
+                var restOfString = lowerCase.slice(1);      // gets the second character
+                console.log(char1Upper + restOfString);
+
+                // Instructor Solution Concise
+                console.log ("\n Instructor Solution Condensed: ");
+                var clean = messyString[0].toUpperCase() + messyString.slice(1).toLowerCase();
+                console.log(clean);
+
+                // split 
+                var split = messyString.split(" ");
+                console.log(split);
+        </script>
+    </head>
+
+    <body>
+        <h1>Hello!</h1>
+    </body>
+
+</html>
