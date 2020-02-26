@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>JavaScript Ex 03</title>
+
+        <script>
+            // Booleans
+            var fewdIsFun = true;
+            console.log ("Is FEWD fun? t/f: " + fewdIsFun);
+
+            // 3 types of Boolean operations: &&, ||, !
+            var tookShower = true;
+            var hasShoes = false;
+            console.log (tookShower && hasShoes);
+
+            var ateApple = true;
+            var ateOrange = false;
+            console.log(ateApple || ateOrange);
+
+            var isWeekend = true;
+            var needShower = !isWeekend;
+
+            // combine logical operators
+            var weekend = false,
+                hadShower = true,
+                hadApple = false,
+                hadOrange = true;
+
+            var shouldIGoToSchool = !weekend && hadShower && (hadApple || hadOrange);
+            console.log("should I go to school today? " + shouldIGoToSchool);
+
+            // comparing numbers with booleans
+            var height = 65;
+            var heightRestriction = 60;
+            console.log("Is height large enough? " + (height >= heightRestriction) );
+
+        </script>
+    </head>
+
+    <body>
+        <h1>Hello!</h1>
+    </body>
+
+</html>
