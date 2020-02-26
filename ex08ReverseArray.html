@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>JavaScript Ex 07</title>
+
+        <script>
+            // getting the index of an array
+            var colors = ["blue", "green", "yellow"];
+            myColor = colors.indexOf("yellow");
+            console.log (myColor);
+
+            // turn an array into a string. the format can be controlled by putting the desired text as the argument of join()
+            console.log( colors.join() );
+            console.log( colors.join(" ") );
+            console.log( colors.join(" - ") );
+
+            var myNums = [1, 22, 48, 3];
+            console.log ( myNums.join(", ") );
+
+            var landmarks = [];
+            landmarks.push("My house");
+            landmarks.push("Big orange tree");
+            landmarks.push("Leaky fire hydrant");
+            landmarks.push("Mini mart");
+            landmarks.push("Playground");
+            landmarks.push("Pig farm");
+            landmarks.push('Friend\'s house');
+
+            console.log( landmarks.join(" - ") );
+
+            console.log( landmarks.reverse() );
+
+        </script>
+    </head>
+
+    <body>
+        <h1>Hello!</h1>
+    </body>
+
+</html>
