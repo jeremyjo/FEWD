@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>JavaScript Ex 05</title>
+
+        <script>
+
+            // push method - add elements into an array (default is to add at the end of the array)
+            var animals = [];
+            animals.push('cat');
+            animals.push('dog');
+            animals.push("llama", "monkey");
+
+            console.log(animals);
+
+            // add to beginning of array
+            animals.unshift('bird');
+            console.log(animals);
+
+            // remove from array (last item)
+            var lastAnimal = animals.pop();
+            console.log(lastAnimal + "array" + animals);
+
+            animals.pop();                  // get rid of the last item
+            animals.unshift(lastAnimal);
+            console.log(animals);
+
+            // remove an item from beginning of array
+            var firstAnimal = animals.shift();
+            console.log (animals, firstAnimal);
+
+        </script>
+    </head>
+
+    <body>
+        <h1>Hello!</h1>
+    </body>
+
+</html>
